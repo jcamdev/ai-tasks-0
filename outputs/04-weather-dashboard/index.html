@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌤️ Weather Dashboard</h1>
+            <div class="search-container">
+                <input type="text" id="cityInput" placeholder="Enter city name...">
+                <button id="searchBtn">Search</button>
+            </div>
+        </header>
+
+        <main>
+            <div id="loading" class="loading hidden">
+                <div class="spinner"></div>
+                <p>Loading weather data...</p>
+            </div>
+
+            <div id="error" class="error hidden">
+                <p>❌ Unable to fetch weather data. Please try again.</p>
+            </div>
+
+            <div id="weatherData" class="weather-data hidden">
+                <div class="current-weather">
+                    <div class="current-info">
+                        <h2 id="cityName">City Name</h2>
+                        <p id="currentDate">Date</p>
+                        <div class="temperature">
+                            <span id="currentTemp">--°</span>
+                            <img id="weatherIcon" src="" alt="Weather icon">
+                        </div>
+                        <p id="weatherDescription">Description</p>
+                    </div>
+                    <div class="weather-details">
+                        <div class="detail">
+                            <span class="label">Feels like</span>
+                            <span id="feelsLike">--°</span>
+                        </div>
+                        <div class="detail">
+                            <span class="label">Humidity</span>
+                            <span id="humidity">--%</span>
+                        </div>
+                        <div class="detail">
+                            <span class="label">Wind Speed</span>
+                            <span id="windSpeed">-- km/h</span>
+                        </div>
+                        <div class="detail">
+                            <span class="label">Pressure</span>
+                            <span id="pressure">-- hPa</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="forecast">
+                    <h3>5-Day Forecast</h3>
+                    <div id="forecastContainer" class="forecast-container">
+                        <!-- Forecast items will be inserted here -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

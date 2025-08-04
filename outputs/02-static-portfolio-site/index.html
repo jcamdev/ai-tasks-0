@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">JD</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>John Doe</h1>
+            <p>Full Stack Developer</p>
+            <button onclick="scrollToSection('projects')">View My Work</button>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>I'm a passionate full stack developer with experience in modern web technologies. I love creating efficient, scalable solutions and learning new technologies.</p>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>E-commerce Platform</h3>
+                    <p>A full-featured online store built with React and Node.js</p>
+                    <div class="tech-stack">React, Node.js, MongoDB</div>
+                </div>
+                <div class="project-card">
+                    <h3>Task Management App</h3>
+                    <p>Collaborative task management tool with real-time updates</p>
+                    <div class="tech-stack">Vue.js, Express, Socket.io</div>
+                </div>
+                <div class="project-card">
+                    <h3>Weather Dashboard</h3>
+                    <p>Interactive weather application with location-based forecasts</p>
+                    <div class="tech-stack">JavaScript, Weather API, CSS3</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Get In Touch</h2>
+            <p>Email: john.doe@example.com</p>
+            <p>LinkedIn: linkedin.com/in/johndoe</p>
+            <p>GitHub: github.com/johndoe</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
